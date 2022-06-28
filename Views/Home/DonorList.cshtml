@@ -1,0 +1,30 @@
+﻿@{ ViewBag.Title = "DonorList"; }
+
+<div class="col-md-12">
+    <h2>Current List of Donors</h2>
+    <a href="javascript:window.print();">Print/Export Report</a>
+</div>
+
+<table class="table">
+    <tr>
+        <th></th>
+        <th>Name:</th>
+        <th>Email:</th>
+        <th>Address:</th>
+        <th>Mobile Phone:</th>
+        <th>Home Phone:</th>
+        <th>Date of Birth:</th>
+    </tr>
+    @foreach (var i in Model)
+    {
+<tr>
+    <th>@i.ID</th>
+    <th>@i.name</th>
+    <th>@i.email</th>
+    <th>@i.address</th>
+    <th>@i.mobilePhone</th>
+    <th>@i.homePhone</th>
+    <th>@i.dateOfBirth</th>
+</tr>}
+</table>
+

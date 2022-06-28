@@ -1,0 +1,129 @@
+﻿@using CAPE.Models
+@model LoginViewModel
+@{
+    ViewBag.Title = "Log in";
+}
+
+<div class="col-md-12">
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-6 loginForm">
+        <h2>Login</h2>
+
+        @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+        {
+            @Html.AntiForgeryToken()
+            <h4>Use your account to log in.</h4>
+            <hr />
+            <form>
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="username col-md-12">
+                    @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                </div>
+                <div class="password col-md-12">
+                    @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                </div>
+                <br />
+                <br />
+                <div class="col-md-12">
+                    <div class="col-md-12">
+                        <div class="checkbox">
+                            @Html.CheckBoxFor(m => m.RememberMe)
+                            @Html.LabelFor(m => m.RememberMe)
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <div class="col-md-12">
+                    <div class="col-md-12">
+                        <input type="submit" value="Log in" class="btn btn-default" />
+                    </div>
+                </div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <p>
+                    @Html.ActionLink("Register as a new user", "Register")
+                </p>
+                <p>
+                    @Html.ActionLink("Forgot your password?", "ForgotPassword")
+                </p>
+            </form>
+          }
+        </div>
+</div>
+
+
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }
+    <style>
+        form {
+            border: 1px solid #000000;
+            border-radius: 25px;
+        }
+
+        label {
+            text-align: center;
+        }
+
+        form {
+            padding-bottom: 20px;
+        }
+
+        .loginForm {
+            text-align: center;
+        }
+
+            .loginForm h2 {
+                text-align: center;
+            }
+
+            .loginForm label {
+                font-size: 17px;
+            }
+
+        .forgot {
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .signup {
+            width: 100%;
+            text-align: center;
+        }
+
+        .username {
+            margin-top: 30px;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .password {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>

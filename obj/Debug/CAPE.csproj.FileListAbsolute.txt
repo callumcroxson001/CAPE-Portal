@@ -1,0 +1,324 @@
+C:\Users\songl\source\repos\CAPE\bin\CAPE.dll.config
+C:\Users\songl\source\repos\CAPE\bin\CAPE.dll
+C:\Users\songl\source\repos\CAPE\bin\CAPE.pdb
+C:\Users\songl\source\repos\CAPE\bin\roslyn\csc.exe
+C:\Users\songl\source\repos\CAPE\bin\roslyn\csc.exe.config
+C:\Users\songl\source\repos\CAPE\bin\roslyn\csc.rsp
+C:\Users\songl\source\repos\CAPE\bin\roslyn\csi.exe
+C:\Users\songl\source\repos\CAPE\bin\roslyn\csi.exe.config
+C:\Users\songl\source\repos\CAPE\bin\roslyn\csi.rsp
+C:\Users\songl\source\repos\CAPE\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\songl\source\repos\CAPE\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\songl\source\repos\CAPE\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\songl\source\repos\CAPE\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\System.AppContext.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\System.Console.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\System.IO.Compression.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\System.Net.Http.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\System.Net.Sockets.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\System.ValueTuple.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\System.Xml.XPath.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\songl\source\repos\CAPE\bin\roslyn\vbc.exe
+C:\Users\songl\source\repos\CAPE\bin\roslyn\vbc.exe.config
+C:\Users\songl\source\repos\CAPE\bin\roslyn\vbc.rsp
+C:\Users\songl\source\repos\CAPE\bin\roslyn\VBCSCompiler.exe
+C:\Users\songl\source\repos\CAPE\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\songl\source\repos\CAPE\bin\Antlr3.Runtime.dll
+C:\Users\songl\source\repos\CAPE\bin\EntityFramework.dll
+C:\Users\songl\source\repos\CAPE\bin\EntityFramework.SqlServer.dll
+C:\Users\songl\source\repos\CAPE\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\songl\source\repos\CAPE\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\songl\source\repos\CAPE\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\songl\source\repos\CAPE\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\songl\source\repos\CAPE\bin\Microsoft.Owin.dll
+C:\Users\songl\source\repos\CAPE\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\songl\source\repos\CAPE\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\songl\source\repos\CAPE\bin\Microsoft.Owin.Security.dll
+C:\Users\songl\source\repos\CAPE\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\songl\source\repos\CAPE\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\songl\source\repos\CAPE\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\songl\source\repos\CAPE\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\songl\source\repos\CAPE\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\songl\source\repos\CAPE\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\songl\source\repos\CAPE\bin\Newtonsoft.Json.dll
+C:\Users\songl\source\repos\CAPE\bin\Owin.dll
+C:\Users\songl\source\repos\CAPE\bin\System.Web.Helpers.dll
+C:\Users\songl\source\repos\CAPE\bin\System.Web.Mvc.dll
+C:\Users\songl\source\repos\CAPE\bin\System.Web.Optimization.dll
+C:\Users\songl\source\repos\CAPE\bin\System.Web.Razor.dll
+C:\Users\songl\source\repos\CAPE\bin\System.Web.WebPages.Deployment.dll
+C:\Users\songl\source\repos\CAPE\bin\System.Web.WebPages.dll
+C:\Users\songl\source\repos\CAPE\bin\System.Web.WebPages.Razor.dll
+C:\Users\songl\source\repos\CAPE\bin\WebGrease.dll
+C:\Users\songl\source\repos\CAPE\bin\System.Web.Helpers.xml
+C:\Users\songl\source\repos\CAPE\bin\System.Web.Mvc.xml
+C:\Users\songl\source\repos\CAPE\bin\System.Web.Optimization.xml
+C:\Users\songl\source\repos\CAPE\bin\System.Web.Razor.xml
+C:\Users\songl\source\repos\CAPE\bin\System.Web.WebPages.xml
+C:\Users\songl\source\repos\CAPE\bin\System.Web.WebPages.Deployment.xml
+C:\Users\songl\source\repos\CAPE\bin\System.Web.WebPages.Razor.xml
+C:\Users\songl\source\repos\CAPE\bin\Newtonsoft.Json.xml
+C:\Users\songl\source\repos\CAPE\bin\Antlr3.Runtime.pdb
+C:\Users\songl\source\repos\CAPE\bin\EntityFramework.xml
+C:\Users\songl\source\repos\CAPE\bin\EntityFramework.SqlServer.xml
+C:\Users\songl\source\repos\CAPE\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\songl\source\repos\CAPE\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\songl\source\repos\CAPE\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\songl\source\repos\CAPE\bin\Microsoft.Owin.xml
+C:\Users\songl\source\repos\CAPE\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\songl\source\repos\CAPE\bin\Microsoft.Owin.Security.xml
+C:\Users\songl\source\repos\CAPE\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\songl\source\repos\CAPE\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\songl\source\repos\CAPE\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\songl\source\repos\CAPE\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\songl\source\repos\CAPE\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\songl\source\repos\CAPE\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\songl\source\repos\CAPE\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\songl\source\repos\CAPE\obj\Debug\CAPE.csproj.AssemblyReference.cache
+C:\Users\songl\source\repos\CAPE\obj\Debug\CAPE.csproj.CoreCompileInputs.cache
+C:\Users\songl\source\repos\CAPE\obj\Debug\CAPE.csproj.CopyComplete
+C:\Users\songl\source\repos\CAPE\obj\Debug\CAPE.dll
+C:\Users\songl\source\repos\CAPE\obj\Debug\CAPE.pdb
+C:\Users\cp200\Desktop\CAPE\bin\CAPE.dll.config
+C:\Users\cp200\Desktop\CAPE\bin\CAPE.dll
+C:\Users\cp200\Desktop\CAPE\bin\CAPE.pdb
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\csc.exe
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\csc.exe.config
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\csc.rsp
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\csi.exe
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\csi.exe.config
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\csi.rsp
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\System.AppContext.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\System.Console.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\System.IO.Compression.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\System.Net.Http.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\System.Net.Sockets.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\System.ValueTuple.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\System.Xml.XPath.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\vbc.exe
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\vbc.exe.config
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\vbc.rsp
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\VBCSCompiler.exe
+C:\Users\cp200\Desktop\CAPE\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\cp200\Desktop\CAPE\bin\Antlr3.Runtime.dll
+C:\Users\cp200\Desktop\CAPE\bin\EntityFramework.dll
+C:\Users\cp200\Desktop\CAPE\bin\EntityFramework.SqlServer.dll
+C:\Users\cp200\Desktop\CAPE\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\cp200\Desktop\CAPE\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\cp200\Desktop\CAPE\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\cp200\Desktop\CAPE\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\cp200\Desktop\CAPE\bin\Microsoft.Owin.dll
+C:\Users\cp200\Desktop\CAPE\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\cp200\Desktop\CAPE\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\cp200\Desktop\CAPE\bin\Microsoft.Owin.Security.dll
+C:\Users\cp200\Desktop\CAPE\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\cp200\Desktop\CAPE\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\cp200\Desktop\CAPE\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\cp200\Desktop\CAPE\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\cp200\Desktop\CAPE\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\cp200\Desktop\CAPE\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\cp200\Desktop\CAPE\bin\Newtonsoft.Json.dll
+C:\Users\cp200\Desktop\CAPE\bin\Owin.dll
+C:\Users\cp200\Desktop\CAPE\bin\System.Web.Helpers.dll
+C:\Users\cp200\Desktop\CAPE\bin\System.Web.Mvc.dll
+C:\Users\cp200\Desktop\CAPE\bin\System.Web.Optimization.dll
+C:\Users\cp200\Desktop\CAPE\bin\System.Web.Razor.dll
+C:\Users\cp200\Desktop\CAPE\bin\System.Web.WebPages.Deployment.dll
+C:\Users\cp200\Desktop\CAPE\bin\System.Web.WebPages.dll
+C:\Users\cp200\Desktop\CAPE\bin\System.Web.WebPages.Razor.dll
+C:\Users\cp200\Desktop\CAPE\bin\WebGrease.dll
+C:\Users\cp200\Desktop\CAPE\bin\System.Web.Helpers.xml
+C:\Users\cp200\Desktop\CAPE\bin\System.Web.Mvc.xml
+C:\Users\cp200\Desktop\CAPE\bin\System.Web.Optimization.xml
+C:\Users\cp200\Desktop\CAPE\bin\System.Web.Razor.xml
+C:\Users\cp200\Desktop\CAPE\bin\System.Web.WebPages.xml
+C:\Users\cp200\Desktop\CAPE\bin\System.Web.WebPages.Deployment.xml
+C:\Users\cp200\Desktop\CAPE\bin\System.Web.WebPages.Razor.xml
+C:\Users\cp200\Desktop\CAPE\bin\Newtonsoft.Json.xml
+C:\Users\cp200\Desktop\CAPE\bin\Antlr3.Runtime.pdb
+C:\Users\cp200\Desktop\CAPE\bin\EntityFramework.xml
+C:\Users\cp200\Desktop\CAPE\bin\EntityFramework.SqlServer.xml
+C:\Users\cp200\Desktop\CAPE\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\cp200\Desktop\CAPE\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\cp200\Desktop\CAPE\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\cp200\Desktop\CAPE\bin\Microsoft.Owin.xml
+C:\Users\cp200\Desktop\CAPE\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\cp200\Desktop\CAPE\bin\Microsoft.Owin.Security.xml
+C:\Users\cp200\Desktop\CAPE\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\cp200\Desktop\CAPE\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\cp200\Desktop\CAPE\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\cp200\Desktop\CAPE\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\cp200\Desktop\CAPE\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\cp200\Desktop\CAPE\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\cp200\Desktop\CAPE\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\cp200\Desktop\CAPE\obj\Debug\CAPE.csprojAssemblyReference.cache
+C:\Users\cp200\Desktop\CAPE\obj\Debug\CAPE.csproj.CoreCompileInputs.cache
+C:\Users\cp200\Desktop\CAPE\obj\Debug\CAPE.csproj.CopyComplete
+C:\Users\cp200\Desktop\CAPE\obj\Debug\CAPE.dll
+C:\Users\cp200\Desktop\CAPE\obj\Debug\CAPE.pdb
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\CAPE.dll.config
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\CAPE.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\CAPE.pdb
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\csc.exe
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\csc.exe.config
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\csc.rsp
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\csi.exe
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\csi.exe.config
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\csi.rsp
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\System.AppContext.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\System.Console.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\System.IO.Compression.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\System.Net.Http.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\System.Net.Sockets.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\System.ValueTuple.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\System.Xml.XPath.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\vbc.exe
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\vbc.exe.config
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\vbc.rsp
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\VBCSCompiler.exe
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Antlr3.Runtime.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\EntityFramework.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\EntityFramework.SqlServer.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Microsoft.Owin.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Microsoft.Owin.Security.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Newtonsoft.Json.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Owin.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\System.Web.Helpers.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\System.Web.Mvc.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\System.Web.Optimization.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\System.Web.Razor.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\System.Web.WebPages.Deployment.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\System.Web.WebPages.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\System.Web.WebPages.Razor.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\WebGrease.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\System.Web.Helpers.xml
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\System.Web.Mvc.xml
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\System.Web.Optimization.xml
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\System.Web.Razor.xml
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\System.Web.WebPages.xml
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\System.Web.WebPages.Deployment.xml
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\System.Web.WebPages.Razor.xml
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Newtonsoft.Json.xml
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Antlr3.Runtime.pdb
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\EntityFramework.xml
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\EntityFramework.SqlServer.xml
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Microsoft.Owin.xml
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Microsoft.Owin.Security.xml
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\obj\Debug\CAPE.csprojAssemblyReference.cache
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\obj\Debug\CAPE.csproj.CoreCompileInputs.cache
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\obj\Debug\CAPE.csproj.CopyComplete
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\obj\Debug\CAPE.dll
+C:\Users\cp200\Documents\weltec idk\Capstone\CAPE\obj\Debug\CAPE.pdb
