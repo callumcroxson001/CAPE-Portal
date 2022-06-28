@@ -1,0 +1,746 @@
+﻿@model CAPE.Models.ViewModel
+
+
+@{ ViewBag.Title = "Home Page";
+    ViewBag.Label = ""; }
+
+<div class="col-ld-12 body">
+    <div class="col-md-2 leftPane">
+        <h3>Forms</h3>
+        <div class="formButtons">
+            <button class="bActive" type="button">Add new donor</button>
+            <button type="button">Add new income</button>
+            <button type="button">Add new expense</button>
+        </div>
+        <hr>
+        <h3>Report</h3>
+        <div class="formButtons">
+            <button type="button">Monthly Donations</button>
+            <button type="button">Yearly Donations</button>
+            <button type="button">Tax Certificate</button>
+            <button type="button">Monthly Expenses</button>
+            <button type="button">Yearly Expenses</button>
+            <button type="button">Purpose Totals</button>
+            <button type="button">List of Donors</button>
+            <button type="button">List Table Values</button>
+        </div>
+
+    </div>
+    <div class="col-md-10 main">
+        <div class="content">
+            <div class="content_inside content_inside_active col-md-12">
+                <h2>Add new donor</h2>
+                <form method="post" action="~/Home/Donor">
+                    <div class="col-md-12 name">
+                        @Html.LabelFor(model => model.donor.name, htmlAttributes: new { @class = "control-label col-md-2" })
+                        @Html.EditorFor(model => model.donor.name, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="col-md-12">
+                        @Html.ValidationMessageFor(model => model.donor.name, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-12 email">
+                        @Html.LabelFor(model => model.donor.email, htmlAttributes: new { @class = "control-label col-md-2" })
+                        @Html.EditorFor(model => model.donor.email, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="col-md-12">
+                        @Html.ValidationMessageFor(model => model.donor.email, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-12 address">
+                        @Html.LabelFor(model => model.donor.address, htmlAttributes: new { @class = "control-label col-md-2" })
+                        @Html.EditorFor(model => model.donor.address, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="col-md-12">
+                        @Html.ValidationMessageFor(model => model.donor.address, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-12 dob">
+                        @Html.LabelFor(model => model.donor.dateOfBirth, htmlAttributes: new { @class = "control-label col-md-2" })
+                        @Html.EditorFor(model => model.donor.dateOfBirth, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="col-md-12">
+                        @Html.ValidationMessageFor(model => model.donor.dateOfBirth, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-12 mobile">
+                        @Html.LabelFor(model => model.donor.mobilePhone, htmlAttributes: new { @class = "control-label col-md-2" })
+                        @Html.EditorFor(model => model.donor.mobilePhone, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="col-md-12">
+                        @Html.ValidationMessageFor(model => model.donor.mobilePhone, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-12 home">
+                        @Html.LabelFor(model => model.donor.homePhone, htmlAttributes: new { @class = "control-label col-md-2" })
+                        @Html.EditorFor(model => model.donor.homePhone, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="col-md-12">
+                        @Html.ValidationMessageFor(model => model.donor.homePhone, "", new { @class = "text-danger" })
+                    </div>
+                    <input type="submit" value="Add" class="btn btn-default" />
+                </form>
+            </div>
+            <div class="content_inside col-md-12">
+                <div class="col-md-3 typePane">
+                    <h4>Add New Income</h4>
+                    <br>
+                    <label>Income Type</label>
+                    <div class="donationType">
+                        <button class="typeActive" type="button">Cash</button>
+                        <button type="button">Envelope</button>
+                        <button type="button">Online</button>
+                    </div>
+                </div>
+                <div class="col-md-9 main">
+                    <div class="formContent">
+                        <div class="formContent_inside formContent_inside_active col-md-12">
+                            <h3>New Cash Income</h3>
+                            <form method="post" action="~/Home/Cash" onsubmit="return checkCash()">
+                                <div class="col-md-12 cashAmount">
+                                    @Html.LabelFor(model => model.donation.amount, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    @Html.ValidationMessageFor(model => model.donation.amount, "", new { @class = "text-danger" })
+                                    <input class="form-control" type="text" id="newcash" name="amount">
+                                </div>
+                                <div class="col-md-12 cashAmount">
+                                    @Html.LabelFor(model => model.donation.date, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <input class="form-control" type="date" id="donationDate" name="date" min="01/01/2021" max="30/12/2021" required>
+                                </div>
+                                <input type="submit" value="Add" class="btn btn-default" />
+                            </form>
+                        </div>
+                        <div class="formContent_inside col-md-12">
+                            <h3>New Envelope Donation</h3>
+                            <h4>Please enter in the donor's ID or name first</h4>
+                            <form method="post" action="~/Home/SearchDonorName">
+                                <div class="col-md-12 findByID">
+                                    <label class="control-label col-md-2">Donor ID / No:</label>
+                                    @Html.EditorFor(model => model.donor.ID, new { htmlAttributes = new { @class = "form-control" } })
+                                </div>
+                                <input type="submit" value="Search" class="btn btn-default" />
+                            </form>
+                            <hr />
+                            <form method="post" action="~/Home/SearchDonorName">
+                                <div class="col-md-12 findByName">
+                                    <label class="control-label col-md-2">Donor Name:</label>
+                                    @Html.EditorFor(model => model.donor.name, new { htmlAttributes = new { @class = "form-control" } })
+                                </div>
+                                <input type="submit" value="Search" class="btn btn-default" />
+                            </form>
+                        </div>
+                        <div class="formContent_inside col-md-12">
+                            <h3>New Online Income Donation</h3>
+                            <h4>Please enter in the donor's ID or name first</h4>
+                            <form method="post" action="~/Home/SearchDonorNameOnline">
+                                <div class="col-md-12 findByID">
+                                    <label class="control-label col-md-2">Donor ID / No:</label>
+                                    @Html.EditorFor(model => model.donor.ID, new { htmlAttributes = new { @class = "form-control" } })
+                                </div>
+                                <input type="submit" value="Search" class="btn btn-default" />
+                            </form>
+                            <hr />
+                            <form method="post" action="~/Home/SearchDonorNameOnline">
+                                <div class="col-md-12 findByName">
+                                    <label class="control-label col-md-2">Donor Name:</label>
+                                    @Html.EditorFor(model => model.donor.name, new { htmlAttributes = new { @class = "form-control" } })
+                                </div>
+                                <input type="submit" value="Search" class="btn btn-default" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content_inside col-md-12">
+                <h2>Expenditure Form</h2>
+                <form method="post" action="~/Home/Expenditure" onsubmit="return checkExpenditure()">
+                    <div class="col-md-12 expendDate">
+                        <input class="form-control" type="date" id="start" name="date" value="03/09/2021" min="01/01/2021" max="30/12/2021" required>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="col-md-12 category">
+                            <label class="control-label col-md-2">Category</label>
+                            <select class="form-control" name="category" id="category" onchange="configureDropDownLists(this,document.getElementById('subcategory'))">
+                                <option value="Volunteer and employer-related costs">Volunteer and employer-related costs</option>
+                                <option value="Costs related to providing goods and services">Costs related to providing goods and services</option>
+                                <option value="Grants and donations made">Grants and donations made</option>
+                                <option value="Other expenses">Other expenses</option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="col-md-12 category">
+                            <label class="control-label col-md-2">Sub-Category</label>
+                            <select class="form-control" name="subcategory" id="subcategory">
+                                <option value="Allowance - Phone">Allowance - Phone</option>
+                                <option value="Allowance - Travel">Allowance - Travel</option>
+                                <option value="Employment credentials, Registration">Employment credentials, Registration</option>
+                                <option value="Salaries and Wages">Salaries and Wages</option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-12 amount">
+                        @Html.LabelFor(model => model.expenditure.amount, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <input class="col-md-4 form-control" id="amountExpenditure" type="text" name="amount">
+                    </div>
+                    <div class="col-md-12 reference">
+                        @Html.LabelFor(model => model.expenditure.invoiceReference, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <input class="col-md-4 form-control" id="invoiceRef" type="text" name="invoiceRef">
+                    </div>
+                    <div class="col-md-12 notes">
+                        @Html.LabelFor(model => model.expenditure.notes, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <textarea class ="col-md-4 form-control" type="text" name="notes">
+                        </textarea>
+                    </div>
+                    <input type="submit" value="Add" class="btn btn-default" />
+                </form>
+            </div>
+            <div class="content_inside col-md-12">
+                <h2>Monthly Donations Report</h2>
+                <h3>Please select the month and year you want to see the income for.</h3>
+                <form method="post" action="~/Home/Monthly" onsubmit="return checkMonthly()">
+                    <div class="col-md-12 findByID">
+                        <select class="form-control" name="month" id="month">
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                    </div>
+                    <div class="col-md-12 findByID">
+                        <label class="col-md-1">Year </label>
+                        <input class="form-control" type="text" id="MonthlyYear" name="year">
+                    </div>
+                    <input type="submit" value="Generate Report" class="btn btn-default" />
+                </form>
+            </div>
+            <div class="content_inside col-md-12">
+                <h2>Yearly Donations Report</h2>
+                <h3>Please select the year you want to see the income for.</h3>
+                <form method="post" action="~/Home/Yearly" onsubmit="return checkYearly()">
+                    <div class="col-md-12 findByID">
+                        <label class="col-md-1"> Year </label>
+                        <input class="form-control" type="text" id="yearYearly" name="year">
+                    </div>
+                    <input type="submit" value="Generate Report" class="btn btn-default" />
+                </form>
+            </div>
+            <div class="content_inside col-md-12">
+                <h2>Donor Tax Certificate</h2>
+                <h3>Please enter in the donor's ID or name and the year of donations you want to get</h3>
+                <form method="post" action="~/Home/TaxCertificate" onsubmit="return TaxCertificateID()">
+                    <div class="col-md-12 findByID">
+                        <label class="control-label col-md-2">Donor ID/No:</label>
+                        @Html.EditorFor(model => model.donor.ID, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="col-md-12 findByName">
+                        <label class="col-md-2">Year </label>
+                        <input class="form-control" type="text" id="YearID" name="year" />
+                    </div>
+                    <input type="submit" value="Search" class="btn btn-default" />
+                </form>
+                <hr />
+                <form method="post" action="~/Home/TaxCertificate" onsubmit="return TaxCertificateName()">
+                    <div class="col-md-12 findByName">
+                        <label class="control-label col-md-2">Donor Name:</label>
+                        @Html.EditorFor(model => model.donor.name, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="col-md-12 findByName">
+                        <label class="col-md-2">Year </label>
+                        <input class="form-control" type="text" id="YearName" name="year" />
+                    </div>
+                    <input type="submit" value="Search" class="btn btn-default" />
+                </form>
+            </div>
+            <div class="content_inside col-md-12">
+                <h2>Monthly Expenses Report</h2>
+                <h3>Please select the month you want to see the total expenses for.</h3>
+                <form method="post" action="~/Home/ExMonthly" onsubmit="return ExMonthly()">
+                    <div class="col-md-12 findByID">
+                        <select class="form-control" name="month" id="month">
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                    </div>
+                    <div class="col-md-12 findByID">
+                        <label class="col-md-1">Year </label>
+                        <input class="form-control" type="text" id="YearExMonthly" name="year">
+                    </div>
+                    <input type="submit" value="Generate Report" class="btn btn-default" />
+                </form>
+            </div>
+            <div class="content_inside col-md-12">
+                <h2>Yearly Expenses Report</h2>
+                <h3>Please select the year you want to see the income for.</h3>
+                <form method="post" action="~/Home/ExYearly" onsubmit="return ExYearly()">
+                    <div class="col-md-12 findByID">
+                        <label class="col-md-1">Year </label>
+                        <input class="form-control" type="text" id="yearExYearly" name="year">
+                    </div>
+                    <input type="submit" value="Generate Report" class="btn btn-default" />
+                </form>
+            </div>
+            <div class="content_inside col-md-12">
+                <h2>Purpose Totals</h2>
+                <h3>Please select a purpose to view the total amount for.</h3>
+                <form method="post" action="~/Home/PurposeTotal" onsubmit="return Totalscheck()">
+                    <div class="col-md-12 findByID">
+                        <select class="col-md-12 form-control" name="purpose">
+                            <option value="Missions">Missions</option>
+                            <option value="Building Fund">Building Fund</option>
+                            <option value="Youth">Youth</option>
+                            <option value="Women">Women</option>
+                            <option value="Men">Men</option>
+                            <option value="Food Bank">Food Bank</option>
+                            <option value="Sunday School">Sunday School</option>
+                            <option value="Overseas">Overseas</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </div>
+                    <div class="col-md-12 findByID">
+                        <select class="form-control" name="month" id="month">
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                    </div>
+                    <div class="col-md-12 findByID">
+                        <label class="col-md-1">Year </label>
+                        <input class="form-control" id ="purposecheck" type="text" name="year">
+                    </div>
+                    <input type="submit" value="Generate total" class="btn btn-default" />
+                </form>
+            </div>
+            <div class="content_inside col-md-12">
+                <h2>Donor report</h2>
+                <h3>Please click the button below to generate the list of current donors</h3>
+                <form action="~/Home/DonorList">
+                    <div class="col-md-12 findByID">
+                        <input type="submit" value="Generate" class="btn btn-default" />
+                    </div>
+                </form>
+            </div>
+            <div class="content_inside col-md-12">
+                <h2>Lists</h2>
+                <h3>This report will generate all the purposes, categories or subcategories depending on the option selected.</h3>
+                <h4>Purposes are all the purposes available for envelopes and online transactions</h4>
+                <h4>Category and sub-category are all the categories expenses fall under</h4>
+                <form action="~/Home/ViewList">
+                    <div class="col-md-12 findByID">
+                        <select class="form-control" name="viewList" id="list">
+                            <option value="Purposes">Purposes</option>
+                            <option value="Category">Categories</option>
+                            <option value="SubCategory">Sub-categories</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Generate" class="btn btn-default" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <br>
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+<style>
+    .body {
+        padding: 5px;
+    }
+
+    .leftPane {
+        text-align: center;
+        border-radius: 25px;
+        background-color: #91e4fb;
+        border: 0.1px solid #91e4fb;
+    }
+
+        .leftPane h3 {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .leftPane button {
+            width: 70%;
+            height: 26px;
+            margin-bottom: 10px;
+        }
+
+        .leftPane p {
+            margin-bottom: 2px;
+        }
+
+        .leftPane hr {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+    .typePane {
+        text-align: center;
+        border-radius: 25px;
+        background-color: #91e4fb;
+        border: 0.1px solid #91e4fb;
+    }
+
+        .typePane h4 {
+            text-align: center;
+            color: black;
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+
+        .typePane button {
+            width: 70%;
+            height: 26px;
+            margin-bottom: 10px;
+        }
+
+        .typePane p {
+            margin-bottom: 2px;
+        }
+
+        .typePane hr {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+    .main {
+        text-align: center;
+        border-radius: 25px;
+        border: 1px solid #000000;
+        margin-top: 3px;
+    }
+
+    #start, #query {
+        width: 70%;
+        height: 26px;
+    }
+
+    #end {
+        width: 70%;
+        height: 26px;
+        margin-bottom: 10px;
+    }
+
+    .formButtons button {
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .bActive {
+        color: teal;
+    }
+
+    .content_inside {
+        display: none;
+        padding: 10px;
+    }
+
+    .content_inside_active {
+        display: block;
+    }
+
+    .donationType button {
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .typeActive {
+        color: teal;
+    }
+
+    .formContent_inside {
+        display: none;
+        padding: 10px;
+    }
+
+    .formContent_inside_active {
+        display: block;
+    }
+
+    .name, .email, .address, .dob, .mobile, .home {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .expendDate, .category, .categorycode, .subcategory, .subcategorycode, .amount, .reference, .notes {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cashAmount, .findByID, .findByName {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #donationDate {
+        width: 70%;
+    }
+
+    #ePurpose {
+        height: 26px;
+    }
+
+    #oPurpose {
+        height: 26px;
+    }
+
+    .purpose {
+        margin-top: 20px;
+    }
+
+    #newPurposeBtn {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        text-align: center;
+    }
+</style>
+<script>let button = document.querySelectorAll('.formButtons button');
+    let content_inside = document.querySelectorAll('.content_inside');
+
+    numbersOnly = /^[0-9.]+$/;
+
+    Array.from(button).forEach(function (buttonArray, i) {
+        buttonArray.addEventListener('click', function () {
+
+            Array.from(button).forEach(buttonAll => buttonAll.classList.remove('bActive'));
+
+            Array.from(content_inside).forEach(content_insideAll => content_insideAll.classList.remove('content_inside_active'));
+
+            button[i].classList.add('bActive');
+
+            content_inside[i].classList.add('content_inside_active');
+        });
+    });
+
+    let formButton = document.querySelectorAll('.donationType button');
+    let formContent_inside = document.querySelectorAll('.formContent_inside');
+
+    Array.from(formButton).forEach(function (buttonArrayy, i) {
+        buttonArrayy.addEventListener('click', function () {
+
+            Array.from(formButton).forEach(buttonAll => buttonAll.classList.remove('typeActive'));
+
+            Array.from(formContent_inside).forEach(content_insideAlll => content_insideAlll.classList.remove('formContent_inside_active'));
+
+            formButton[i].classList.add('typeActive');
+
+            formContent_inside[i].classList.add('formContent_inside_active');
+        });
+    });
+
+    document.getElementById("newPurposeBtn").onclick = function () {
+        var container = document.getElementById("oContainer");
+        var section = document.getElementById("oSection");
+        container.appendChild(section.cloneNode(true));
+    };
+
+    function configureDropDownLists(category, subcategory) {
+        var verc = ['Allowance - Phone', 'Allowance - Travel', 'Employment credentials, Registration', 'Salaries and Wages'];
+        var crpgs = ['Visiting speakers ministry gift', 'Advertising', 'Books, CDs and DVDs', 'Conferences', 'Gifts', 'Hospitality and Catering', 'Insurance premium', 'Sound Desk and IT', 'Kitchen', 'Magazines and subscriptions', 'Ministry resources', 'Music / Worship', 'Stamps and Postage', 'Printing', 'Stationary', 'Sunday School', 'Youth Ministry', 'ENABLE Men', 'ENABLE Women', 'Others'];
+        var gdm = ['Donations (Avalon Assembly of God)', 'Donations (Others)', 'Missions (Overseas)', 'Missions (Local)'];
+        var oe = ['AGNZ Levy (3%)', 'Loss on disposal, Bank Statement printout'];
+
+
+        switch (category.value) {
+            case 'Volunteer and employer-related costs':
+                subcategory.options.length = 0;
+                for (i = 0; i < verc.length; i++) {
+                    createOption(subcategory, verc[i], verc[i]);
+                }
+                break;
+            case 'Costs related to providing goods and services':
+                subcategory.options.length = 0;
+                for (i = 0; i < crpgs.length; i++) {
+                    createOption(subcategory, crpgs[i], crpgs[i]);
+                }
+                break;
+            case 'Grants and donations made':
+                subcategory.options.length = 0;
+                for (i = 0; i < gdm.length; i++) {
+                    createOption(subcategory, gdm[i], gdm[i]);
+                }
+                break;
+            case 'Other expenses':
+                subcategory.options.length = 0;
+                for (i = 0; i < oe.length; i++) {
+                    createOption(subcategory, oe[i], oe[i]);
+                }
+                break;
+            default:
+                subcategory.options.length = 0;
+                break;
+        }
+
+    }
+
+    function createOption(category, text, value) {
+        var opt = document.createElement('option');
+        opt.value = value;
+        opt.text = text;
+        category.options.add(opt);
+    }
+
+
+    function checkCash() {
+        newcash = document.getElementById('newcash').value;
+
+        if (newcash == "" || newcash == null || !numbersOnly.test(newcash)) {
+            alert("This amount is required, Please enter numbers only");
+            document.getElementById('newcash').select();
+            return false;
+        }
+
+    }
+
+    function checkExpenditure() {
+        amountExpenditure = document.getElementById('amountExpenditure').value;
+        invoiceRef = document.getElementById('invoiceRef').value;
+
+        if (amountExpenditure == "" || amountExpenditure == null || !numbersOnly.test(amountExpenditure)) {
+            alert("This amount is required, Please only enter number");
+            document.getElementById('amountExpenditure').select();
+            return false;
+        }
+
+        if (invoiceRef == "" || invoiceRef == null || !numbersOnly.test(invoiceRef)) {
+            alert("This Invoice Reference is required, Please only enter number");
+            document.getElementById('invoiceRef').select();
+            return false;
+        }
+
+    }
+
+    function checkMonthly() {
+        MonthlyYear = document.getElementById('MonthlyYear').value;
+
+
+        if (MonthlyYear == "" || MonthlyYear == null || !numbersOnly.test(MonthlyYear)) {
+            alert("This Year is required, Please only enter number");
+            document.getElementById('MonthlyYear').select();
+            return false;
+        }
+
+    }
+
+    function checkYearly() {
+        yearYearly = document.getElementById('yearYearly').value;
+
+
+        if (yearYearly == "" || yearYearly == null || !numbersOnly.test(yearYearly)) {
+            alert("This Year is required, Please only enter number");
+            document.getElementById('yearYearly').select();
+            return false;
+        }
+
+    }
+
+    function TaxCertificateID() {
+        YearID = document.getElementById('YearID').value;
+
+        if (YearID == "" || YearID == null || !numbersOnly.test(YearID)) {
+            alert("This Year is required, Please only enter number");
+            document.getElementById('YearID').select();
+            return false;
+        }
+
+    }
+
+
+    function TaxCertificateName() {
+        YearName = document.getElementById('YearName').value;
+
+        if (YearName == "" || YearName == null || !numbersOnly.test(YearName)) {
+            alert("This Year is required, Please only enter number");
+            document.getElementById('YearName').select();
+            return false;
+        }
+
+    }
+
+
+    function TaxCertificateName() {
+        YearName = document.getElementById('YearName').value;
+
+        if (YearName == "" || YearName == null || !numbersOnly.test(YearName)) {
+            alert("This Year is required, Please only enter number");
+            document.getElementById('YearName').select();
+            return false;
+        }
+
+    }
+
+
+
+    function ExMonthly() {
+        YearExMonthly = document.getElementById('YearExMonthly').value;
+
+        if (YearExMonthly == "" || YearExMonthly == null || !numbersOnly.test(YearExMonthly)) {
+            alert("This Year is required, Please only enter number");
+            document.getElementById('YearExMonthly').select();
+            return false;
+        }
+
+    }
+
+
+    function ExYearly() {
+        yearExYearly = document.getElementById('yearExYearly').value;
+
+        if (yearExYearly == "" || yearExYearly == null || !numbersOnly.test(yearExYearly)) {
+            alert("This Year is required, Please only enter number");
+            document.getElementById('yearExYearly').select();
+            return false;
+        }
+
+    }
+
+
+    function Totalscheck() {
+        purposecheck = document.getElementById('purposecheck').value;
+
+        if (purposecheck == "" || purposecheck == null || !numbersOnly.test(purposecheck)) {
+            alert("This Year is required, Please only enter number");
+            document.getElementById('purposecheck').select();
+            return false;
+        }
+
+    }
+
+    </script>

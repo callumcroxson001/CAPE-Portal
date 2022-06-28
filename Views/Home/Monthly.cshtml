@@ -1,0 +1,30 @@
+﻿
+@{ ViewBag.Title = "Monthly"; }
+
+<div class="col-md-12">
+    <h2>Income received for @ViewBag.MonthName, @ViewBag.Year</h2>
+    <h4>Income received in general offerings: @ViewBag.cTotal</h4>
+    <h4>Income received in envelopes: @ViewBag.eTotal</h4>
+    <h4>Income received in online transactions: @ViewBag.oTotal</h4>
+    <h3>Total received for this year: @ViewBag.Total</h3>
+    <a href="javascript:window.print();">Print/Export Report</a>
+</div>
+<table class="table">
+    <tr>
+        <th>Date:</th>
+        <th>Amount:</th>
+        <th>Purpose:</th>
+        <th>Specifics:</th>
+        <th>Donation Type:</th>
+    </tr>
+    @foreach (var i in Model)
+    {
+<tr>
+    <th>@i.date</th>
+    <th>@i.amount</th>
+    <th>@i.purpose</th>
+    <th>@i.specifics</th>
+    <th>@i.type</th>
+</tr>}
+</table>
+

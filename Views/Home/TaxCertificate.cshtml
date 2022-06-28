@@ -1,0 +1,28 @@
+﻿
+@{ ViewBag.Title = "TaxCertificate"; }
+
+<div class="col-md-12">
+    <h2>ID: @ViewBag.ID, @ViewBag.Name</h2>
+    <h4>Donated in envelopes: @ViewBag.enTotal</h4>
+    <h4>Donated in online transactions: @ViewBag.onTotal</h4>
+    <h3>Total donations for this year: @ViewBag.Total</h3>
+    <a href="javascript:window.print();">Print/Export Report</a>
+</div>
+<table class="table">
+    <tr>
+        <th>Date:</th>
+        <th>Amount:</th>
+        <th>Purpose:</th>
+        <th>Specifics:</th>
+        <th>Donation Type:</th>
+    </tr>
+    @foreach (var i in Model)
+    {
+<tr>
+    <th>@i.date</th>
+    <th>@i.amount</th>
+    <th>@i.purpose</th>
+    <th>@i.specifics</th>
+    <th>@i.type</th>
+</tr>}
+</table>

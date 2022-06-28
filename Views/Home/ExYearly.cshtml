@@ -1,0 +1,27 @@
+﻿
+@{ ViewBag.Title = "ExYearly"; }
+
+<div class="col-md-12">
+    <h2>Expenditure for @ViewBag.Year</h2>
+    <h3>Total spent this year: @ViewBag.Total</h3>
+    <a href="javascript:window.print();">Print/Export Report</a>
+</div>
+<table class="table">
+    <tr>
+        <th>Date:</th>
+        <th>Amount:</th>
+        <th>Sub-Category:</th>
+        <th>Invoice Reference:</th>
+        <th>Notes:</th>
+    </tr>
+    @foreach (var i in Model)
+    {
+<tr>
+    <th>@i.date</th>
+    <th>@i.amount</th>
+    <th>@i.SCID</th>
+    <th>@i.invoiceReference</th>
+    <th>@i.notes</th>
+</tr>}
+</table>
+

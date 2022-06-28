@@ -1,0 +1,25 @@
+﻿
+@{ ViewBag.Title = "PurposeTotal"; }
+
+<div class="col-md-12">
+    <h2>Total donations towards @ViewBag.PurposeName</h2>
+    <h3>Total: @ViewBag.Total</h3>
+    <a href="javascript:window.print();">Print/Export Report</a>
+</div>
+<table class="table">
+    <tr>
+        <th>Date:</th>
+        <th>Amount:</th>
+        <th>Specifics:</th>
+        <th>Donation Type:</th>
+    </tr>
+    @foreach (var i in Model)
+    {
+<tr>
+    <th>@i.date</th>
+    <th>@i.amount</th>
+    <th>@i.specifics</th>
+    <th>@i.type</th>
+</tr>}
+</table>
+

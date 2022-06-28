@@ -1,0 +1,212 @@
+﻿
+@{ ViewBag.Title = "Online Form"; }
+
+<div class="col-ld-12 body">
+    <div class="col-md-12 main">
+        <h2>You successfully added a new Online donation</h2>
+        <h2>To add new online donation with the same person, please use the form below</h2>
+        <h2>Or you can return to the <a href='@Url.Action("Index", "Home")'>home page</a></h2>
+        <hr />
+
+        <form method="post" action="~/Home/Online">
+            <div class="col-md-12 findByID">
+                <label class="control-label col-md-2">Name:</label>
+                <input type="text" class="control-label col-md-3 form-control" name="name" readonly value="@ViewBag.Name">
+            </div>
+            <div class="col-md-12 findByID">
+                <label class="control-label col-md-2">Donor ID/No:</label>
+                <input type="text" class="control-label col-md-3 form-control" name="DID" readonly value="@ViewBag.ID">
+            </div>
+            <div class="col-md-12 findByID">
+                <label class="col-md-2">Transaction Purpose</label>
+                <select class="col-md-3 form-control" name="purpose">
+                    <option value="Missions">Missions</option>
+                    <option value="Building Fund">Building Fund</option>
+                    <option value="Youth">Youth</option>
+                    <option value="Women">Women</option>
+                    <option value="Men">Men</option>
+                    <option value="Food Bank">Food Bank</option>
+                    <option value="Sunday School">Sunday School</option>
+                    <option value="Overseas">Overseas</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+            <div class="col-md-12 findByID">
+                <label class="col-md-2">Specifics/Notes</label>
+                <input class="col-md-3 form-control" type="text" name="specifics">
+            </div>
+            <div class="col-md-12 findByID">
+                <label class="col-md-2">Amount</label>
+                <input class="col-md-3 form-control" type="text" name="amount">
+            </div>
+            <div class="col-md-12 findByID">
+                <input class="form-control col-md-12" type="date" id="donationDate" name="date" value="03/09/2021" min="01/01/2021" max="30/12/2021">
+            </div>
+            <input style="margin-bottom: 10px;" type="submit" value="Add" class="btn btn-default" />
+        </form>
+    </div>
+</div>
+<style>
+    .body {
+        padding: 5px;
+    }
+
+    .leftPane {
+        text-align: center;
+        border-radius: 25px;
+        background-color: #91e4fb;
+        border: 0.1px solid #91e4fb;
+    }
+
+        .leftPane h3 {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .leftPane button {
+            width: 70%;
+            height: 26px;
+            margin-bottom: 10px;
+        }
+
+        .leftPane p {
+            margin-bottom: 2px;
+        }
+
+        .leftPane hr {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+    .typePane {
+        text-align: center;
+        border-radius: 25px;
+        background-color: #91e4fb;
+        border: 0.1px solid #91e4fb;
+    }
+
+        .typePane h4 {
+            text-align: center;
+            color: black;
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+
+        .typePane button {
+            width: 70%;
+            height: 26px;
+            margin-bottom: 10px;
+        }
+
+        .typePane p {
+            margin-bottom: 2px;
+        }
+
+        .typePane hr {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+    .main {
+        text-align: center;
+        border-radius: 25px;
+        border: 1px solid #000000;
+        margin-top: 3px;
+    }
+
+    #start, #query {
+        width: 70%;
+        height: 26px;
+    }
+
+    #end {
+        width: 70%;
+        height: 26px;
+        margin-bottom: 10px;
+    }
+
+    .formButtons button {
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .bActive {
+        color: teal;
+    }
+
+    .content_inside {
+        display: none;
+        padding: 10px;
+    }
+
+    .content_inside_active {
+        display: block;
+    }
+
+    .donationType button {
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .typeActive {
+        color: teal;
+    }
+
+    .formContent_inside {
+        display: none;
+        padding: 10px;
+    }
+
+    .formContent_inside_active {
+        display: block;
+    }
+
+    .name, .email, .address, .dob, .mobile, .home {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .expendDate, .category, .categorycode, .subcategory, .subcategorycode, .amount, .reference, .notes {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cashAmount, .findByID, .findByName {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #donationDate {
+        width: 70%;
+    }
+
+    #ePurpose {
+        height: 26px;
+    }
+
+    #oPurpose {
+        height: 26px;
+    }
+
+    .purpose {
+        margin-top: 20px;
+    }
+
+    #newPurposeBtn {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        text-align: center;
+    }
+</style>
